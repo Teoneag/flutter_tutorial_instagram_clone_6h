@@ -58,7 +58,7 @@ class _SignupScreenState extends State<SignupScreen> {
     setState(() {
       _isLoading = false;
     });
-    if (res != 'Success') {
+    if (res != 'success') {
       showSnackBar(res, context);
     } else {
       Navigator.of(context).pushReplacement(

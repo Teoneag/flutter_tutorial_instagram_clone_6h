@@ -27,10 +27,11 @@ class AuthMethdods {
   }) async {
     String res = "Some error occured";
     try {
-      if (email.isNotEmpty ||
-          password.isNotEmpty ||
-          username.isNotEmpty ||
-          bio.isNotEmpty) {
+      if (email.isNotEmpty &&
+          password.isNotEmpty &&
+          username.isNotEmpty &&
+          bio.isNotEmpty &&
+          file.isNotEmpty) {
         // register user
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
           email: email,
@@ -55,7 +56,7 @@ class AuthMethdods {
               user.toJson(),
             );
 
-        res = "Success";
+        res = 'success';
       } else {
         res = "Please enter all the fields";
       }
