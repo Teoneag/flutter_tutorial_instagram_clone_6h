@@ -7,6 +7,7 @@ import 'package:t_instagram_clone_6h/providers/user_provider.dart';
 import 'package:t_instagram_clone_6h/resources/firestore_methods.dart';
 import 'package:t_instagram_clone_6h/screens/comment_screen.dart';
 import 'package:t_instagram_clone_6h/utilities/colors.dart';
+import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
 import 'package:t_instagram_clone_6h/widgets/like_animation.dart';
 
 class PostCard extends StatefulWidget {
@@ -42,9 +43,10 @@ class _PostCardState extends State<PostCard> {
   @override
   Widget build(BuildContext context) {
     final User user = Provider.of<UserProvider>(context).getUser;
+    final width = MediaQuery.of(context).size.width;
 
     return Container(
-      color: mobileBackgroundColor,
+      color: width > webScreenSize ? secondaryColor : mobileBackgroundColor,
       padding: const EdgeInsets.symmetric(
         vertical: 10,
       ),
@@ -75,7 +77,7 @@ class _PostCardState extends State<PostCard> {
                       children: [
                         Text(
                           widget.snap['username'],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),

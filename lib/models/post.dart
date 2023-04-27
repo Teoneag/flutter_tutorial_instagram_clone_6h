@@ -10,7 +10,7 @@ class Post {
   final String postUrl;
   final String profImageUrl;
 
-  Post({
+  const Post({
     required this.description,
     required this.uid,
     required this.username,
