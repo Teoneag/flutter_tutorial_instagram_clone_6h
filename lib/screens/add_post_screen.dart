@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:t_instagram_clone_6h/responsive/mobile_screen_layout.dart';
 import '../resources/firestore_methods.dart';
 import '/providers/user_provider.dart';
 import '/utilities/colors.dart';
@@ -40,6 +41,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
         username: username,
         // TODO: solve can coues error if img is null
       );
+      NavigationHelper.changePage(context, 0);
       setState(() {
         _isLoading = false;
       });

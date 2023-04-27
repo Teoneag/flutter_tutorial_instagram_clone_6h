@@ -8,6 +8,15 @@ class MobileScreenLayout extends StatefulWidget {
 
   @override
   State<MobileScreenLayout> createState() => _MobileScreenLayoutState();
+  void changePage() {}
+}
+
+class NavigationHelper {
+  static void changePage(BuildContext context, int pageIndex) {
+    final mobileLayoutState =
+        context.findAncestorStateOfType<_MobileScreenLayoutState>();
+    mobileLayoutState?.navigationTapped(pageIndex);
+  }
 }
 
 class _MobileScreenLayoutState extends State<MobileScreenLayout> {
