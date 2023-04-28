@@ -1,12 +1,12 @@
-import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'dart:typed_data';
 import 'package:flutter_svg/svg.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:t_instagram_clone_6h/responsive/mobile_screen_layout.dart';
-import 'package:t_instagram_clone_6h/responsive/responsive_layout_screen.dart';
-import 'package:t_instagram_clone_6h/responsive/web_screen_layout.dart';
-import 'package:t_instagram_clone_6h/screens/login_screen.dart';
 
+import '/responsive/mobile_screen_layout.dart';
+import '/responsive/responsive_layout_screen.dart';
+import '/responsive/web_screen_layout.dart';
+import '/screens/login_screen.dart';
 import '/utilities/utilities.dart';
 import '/utilities/colors.dart';
 import '/widgets/text_field_input.dart';

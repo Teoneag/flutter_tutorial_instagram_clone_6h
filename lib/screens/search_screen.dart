@@ -1,9 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
-import 'package:t_instagram_clone_6h/screens/profile_screen.dart';
 
+import '/screens/profile_screen.dart';
 import '/utilities/colors.dart';
 import '/utilities/global_variables.dart';
 

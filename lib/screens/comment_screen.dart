@@ -1,12 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
-import 'package:t_instagram_clone_6h/resources/firestore_methods.dart';
-import 'package:t_instagram_clone_6h/utilities/colors.dart';
 
-import '../models/user.dart';
-import '../providers/user_provider.dart';
-import '../widgets/comment_card.dart';
+import '/resources/firestore_methods.dart';
+import '/utilities/colors.dart';
+import '/models/user.dart';
+import '/providers/user_provider.dart';
+import '/widgets/comment_card.dart';
 
 class CommentScreen extends StatefulWidget {
   final snap;

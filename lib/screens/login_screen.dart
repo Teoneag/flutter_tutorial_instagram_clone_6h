@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:t_instagram_clone_6h/responsive/mobile_screen_layout.dart';
-import 'package:t_instagram_clone_6h/screens/signup_screen.dart';
-import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
 
-import '../responsive/responsive_layout_screen.dart';
-import '../responsive/web_screen_layout.dart';
+import '/responsive/mobile_screen_layout.dart';
+import '/screens/signup_screen.dart';
+import '/utilities/global_variables.dart';
+import '/responsive/responsive_layout_screen.dart';
+import '/responsive/web_screen_layout.dart';
 import '/resources/auth_methods.dart';
 import '/utilities/utilities.dart';
 import '/utilities/colors.dart';

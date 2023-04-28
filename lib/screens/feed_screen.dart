@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
-import 'package:t_instagram_clone_6h/widgets/post_card.dart';
 
+import '/utilities/global_variables.dart';
+import '/widgets/post_card.dart';
 import '/utilities/colors.dart';
 
 class FeedScreen extends StatelessWidget {

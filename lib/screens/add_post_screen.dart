@@ -1,15 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import 'package:t_instagram_clone_6h/responsive/mobile_screen_layout.dart';
-import '../resources/firestore_methods.dart';
+
+import '/responsive/mobile_screen_layout.dart';
+import '/resources/firestore_methods.dart';
 import '/providers/user_provider.dart';
 import '/utilities/colors.dart';
 import '/utilities/utilities.dart';
-
-import '../models/user.dart';
+import '/models/user.dart';
 
 class AddPostScreen extends StatefulWidget {
   const AddPostScreen({super.key});

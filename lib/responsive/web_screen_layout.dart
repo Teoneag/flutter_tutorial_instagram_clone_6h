@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
 
-import '../utilities/colors.dart';
+import '/utilities/global_variables.dart';
+import '/utilities/colors.dart';
 
 class WebScreenLayout extends StatefulWidget {
   @override

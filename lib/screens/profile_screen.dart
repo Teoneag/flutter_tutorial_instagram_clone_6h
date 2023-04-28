@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:t_instagram_clone_6h/resources/auth_methods.dart';
-import 'package:t_instagram_clone_6h/resources/firestore_methods.dart';
-import 'package:t_instagram_clone_6h/screens/login_screen.dart';
 
+import '/resources/auth_methods.dart';
+import '/resources/firestore_methods.dart';
+import '/screens/login_screen.dart';
 import '/utilities/colors.dart';
 import '/utilities/utilities.dart';
 import '/widgets/follow_button.dart';

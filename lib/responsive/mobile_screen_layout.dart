@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:t_instagram_clone_6h/utilities/colors.dart';
-import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
+
+import '/utilities/colors.dart';
+import '/utilities/global_variables.dart';
 
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({super.key});

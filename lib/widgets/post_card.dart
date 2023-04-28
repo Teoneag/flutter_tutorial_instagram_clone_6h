@@ -2,13 +2,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:t_instagram_clone_6h/models/user.dart';
-import 'package:t_instagram_clone_6h/providers/user_provider.dart';
-import 'package:t_instagram_clone_6h/resources/firestore_methods.dart';
-import 'package:t_instagram_clone_6h/screens/comment_screen.dart';
-import 'package:t_instagram_clone_6h/utilities/colors.dart';
-import 'package:t_instagram_clone_6h/utilities/global_variables.dart';
-import 'package:t_instagram_clone_6h/widgets/like_animation.dart';
+
+import '/models/user.dart';
+import '/providers/user_provider.dart';
+import '/resources/firestore_methods.dart';
+import '/screens/comment_screen.dart';
+import '/utilities/colors.dart';
+import '/utilities/global_variables.dart';
+import '/widgets/like_animation.dart';
 
 class PostCard extends StatefulWidget {
   final snap;
