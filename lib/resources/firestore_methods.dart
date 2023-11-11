@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:uuid/uuid.dart';
 
 import '/resources/storage_methdods.dart';
@@ -8,7 +7,6 @@ import '/models/post.dart';
 
 class FirestoreMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // upload post
   Future<String> uploadPost({
@@ -40,7 +38,6 @@ class FirestoreMethods {
           username: username,
         );
 
-        User? _user = _auth.currentUser;
         await _firestore.collection('posts').doc(postId).set(post.toJson());
         res = 'success';
       } else {
